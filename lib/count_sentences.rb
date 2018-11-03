@@ -29,7 +29,7 @@ class String
   def count_sentences
     # complete_sentences = []
     if self.exclamation? == true || self.question? == true || self.sentence? == true
-      self.split.count
+      self.split.count.squeeze
       #.reject(&:blank?)
       #binding.pry
     else 0
